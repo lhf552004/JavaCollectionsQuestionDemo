@@ -23,65 +23,43 @@ public class Main {
         // End Demo 1---------------------------------------------
 
         // Start Demo 2 Array list-------------------------------------------
-        long startTime = System.currentTimeMillis();
-        ArrayList<String> cars = new ArrayList<>();
-
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-
-        cars.add("Volvo");
-        cars.add("BMW");
-        cars.add("Ford");
-        cars.add("Mazda");
-        System.out.println(cars);
-        System.out.println(cars.get(3));
-
-        ListIterator listIterator = cars.listIterator();
-        while (listIterator.hasNext()){
-            System.out.println(listIterator.next());
-        }
-        long endTime = System.currentTimeMillis();
-        System.out.println("ArrayList took " + (endTime - startTime) + " milliseconds");
-        startTime = System.currentTimeMillis();
-        LinkedList<String> cars2 = new LinkedList<>();
-        cars2.add("Volvo");
-        cars2.add("BMW");
-        cars2.add("Ford");
-        cars2.add("Mazda");
-
-        cars2.add("Volvo");
-        cars2.add("BMW");
-        cars2.add("Ford");
-        cars2.add("Mazda");
-
-        cars2.add("Volvo");
-        cars2.add("BMW");
-        cars2.add("Ford");
-        cars2.add("Mazda");
-
-        cars2.add("Volvo");
-        cars2.add("BMW");
-        cars2.add("Ford");
-        cars2.add("Mazda");
-
-        System.out.println(cars2);
-        System.out.println(cars2.get(3));
-        endTime = System.currentTimeMillis();
-        System.out.println("LinkedList took " + (endTime - startTime) + " milliseconds");
-
-//        cars2.add(3, "Wawa");
+//        long startTime = System.currentTimeMillis();
+//        ArrayList<String> cars = new ArrayList<>();
+//
+//        cars.add("Volvo");
+//        cars.add("BMW");
+//        cars.add("Ford");
+//        cars.add("Mazda");
+//
+//        System.out.println(cars);
+//        System.out.println(cars.get(3));
+//        try
+//        {
+//            Collection collection = Collections.unmodifiableCollection(cars);
+//            collection.add("My car");
+//        }
+//        catch (UnsupportedOperationException ex){
+//            ex.printStackTrace();
+//        }
+//
+//
+//        ListIterator listIterator = cars.listIterator();
+//        while (listIterator.hasNext()){
+//            System.out.println(listIterator.next());
+//        }
+//        long endTime = System.currentTimeMillis();
+//        System.out.println("ArrayList took " + (endTime - startTime) + " milliseconds");
+//        startTime = System.currentTimeMillis();
+//        LinkedList<String> cars2 = new LinkedList<>();
+//        cars2.add("Volvo");
+//        cars2.add("BMW");
+//        cars2.add("Ford");
+//        cars2.add("Mazda");
+//
+//        System.out.println(cars2);
+//        System.out.println(cars2.get(3));
+//        endTime = System.currentTimeMillis();
+//        System.out.println("LinkedList took " + (endTime - startTime) + " milliseconds");
         // End Demo 2---------------------------------------------
         //Demo 3 Sort---------------------------------------------
         //		List<Student> list = Arrays.asList(new Student("Hallun", 33), new Student("Alex", 23), new Student("Yelk", 33));
@@ -151,5 +129,28 @@ public class Main {
         //		}
         //		System.out.println(staff);
         // end Demo5-----------------------------------
+
+        // Start Demo 6 -------------------------------
+//        ArrayList<String> list = new ArrayList<>();
+//
+//        list.add("Volvo");
+//        list.add("BMW");
+//        list.add("Ford");
+//        list.add("Mazda");
+//        Collections.reverse(list);
+//        System.out.println(list);
+        // End Demo 6 ---------------------------------
+
+        // Start Demo 7 -------------------------------
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add("Volvo");
+        list.add("BMW");
+        list.add("Ford");
+        list.add("Mazda");
+        Comparator cmp = Collections.reverseOrder();
+        Collections.sort(list,cmp);
+        System.out.println(list);
+        // End Demo 7 ---------------------------------
     }
 }

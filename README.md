@@ -51,8 +51,9 @@ Traversal: Vector can use both Enumeration and Iterator for traversing over elem
 Applications : Most of the time, programmers prefer ArrayList over Vector because ArrayList can be synchronized explicitly using Collections.synchronizedList.
 
 ## What is the difference between ArrayList and LinkedList?
-ArrayList装转数据速度快。
+ArrayList装转,遍历数据速度快。
 
+linkedList插入、删除数据快。
 | ArrayList	| LinkedList |
 | --------- | ---------- |
 | ArrayList uses a dynamic array. | LinkedList uses a doubly linked list.| 
@@ -89,12 +90,20 @@ Using HashSet: By using HashSet we can remove the duplicate element from the Arr
 Using LinkedHashSet: We can also maintain the insertion order by using LinkedHashSet instead of HashSet.
 ##  How to reverse ArrayList?
     Collections.reverse(list);  
+ Demo 6
 ## How to sort ArrayList in descending order?
     Comparator cmp = Collections.reverseOrder();  
     Collections.sort(list,cmp);  
 ## LinkedList是如何用Java实现的，它是单链表还是双链表？ 
 Linkedlist 是双向链表
 
+##  What is the difference between Comparable and Comparator?
+| Comparable | Comparator | 
+| ---------- | ---------- |
+| Comparable provides only one sort of sequence. | The Comparator provides multiple sorts of sequences.| 
+| It provides one method named compareTo().	| It provides one method named compare().| 
+| It is found in java.lang package.	| It is located in java.util package.| 
+| If we implement the Comparable interface, The actual class is modified. | The actual class is not changed.| 
 ## What is the difference between Set and Map?
 The differences between the Set and Map are given below.
 
