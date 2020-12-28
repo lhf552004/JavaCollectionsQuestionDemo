@@ -98,6 +98,8 @@ Using LinkedHashSet: We can also maintain the insertion order by using LinkedHas
 Linkedlist 是双向链表
 
 ##  What is the difference between Comparable and Comparator?
+See Demo 3, using lamda to create Comparator, using Comparable from String.
+
 | Comparable | Comparator | 
 | ---------- | ---------- |
 | Comparable provides only one sort of sequence. | The Comparator provides multiple sorts of sequences.| 
