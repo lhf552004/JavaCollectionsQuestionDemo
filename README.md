@@ -146,9 +146,9 @@ HashMap是基于hashing的原理，
 唯一的区别在于当queue为空时，: the remove() method throws an exception, while the poll() method returns null.
 [官方资料](https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html)
 ## PriorityQueue vs Queue vs Heap
-Queue遵循先进先出的原则，
+Queue遵循先进先出的原则，它是一个interface
 
-PriorityQueue是在先进先出的基础上，进行排序
+PriorityQueue是在先进先出的基础上，进行排序, PriorityQueue实现了Queue
 
 PriorityQueue是基于Heap的实现
 
