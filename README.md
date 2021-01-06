@@ -201,5 +201,10 @@ CopyOnWriteArrayList is thread-safe, ArrayList is not
 
 CopyOnWriteArrayList 在read数据时，相对于Vector能够更好的处理并发性
 
+## Stack
+Stack是Vector的一个子类，它实现了一个标准的后进先出的栈。
+Stack<E> extends Vector<E>
+
+
 
 

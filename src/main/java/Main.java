@@ -62,23 +62,23 @@ public class Main {
 //        System.out.println("LinkedList took " + (endTime - startTime) + " milliseconds");
         // End Demo 2---------------------------------------------
         //Demo 3 Sort---------------------------------------------
-        		List<Student> list = Arrays.asList(new Student("Hallun", 33), new Student("Alex", 23), new Student("Yelk", 33));
-        
-        		System.out.println("Unsorted List in Java: " + list);
-        		list.sort(new Comparator<Student>() {
-        			@Override
-        			public int compare(Student h1, Student h2) {
-        				return h1.getName().compareTo(h2.getName());
-        			}
-        		});
-        		System.out.println("Sorted List in Java: " + list);
-        		List<Student> list2 = Arrays.asList( new Student("Hallun", 33), new Student("Alex", 23), new Student("Yelk", 33));
-        
-        		Comparator<Student> comparator = (Student h1, Student h2) -> {
-    				return h1.getName().compareTo(h2.getName());
-    			};
-        		Collections.sort(list2, comparator);
-        		System.out.println("Sorted List by Collections.sort: " + list2 );
+//        		List<Student> list = Arrays.asList(new Student("Hallun", 33), new Student("Alex", 23), new Student("Yelk", 33));
+//
+//        		System.out.println("Unsorted List in Java: " + list);
+//        		list.sort(new Comparator<Student>() {
+//        			@Override
+//        			public int compare(Student h1, Student h2) {
+//        				return h1.getName().compareTo(h2.getName());
+//        			}
+//        		});
+//        		System.out.println("Sorted List in Java: " + list);
+//        		List<Student> list2 = Arrays.asList( new Student("Hallun", 33), new Student("Alex", 23), new Student("Yelk", 33));
+//
+//        		Comparator<Student> comparator = (Student h1, Student h2) -> {
+//    				return h1.getName().compareTo(h2.getName());
+//    			};
+//        		Collections.sort(list2, comparator);
+//        		System.out.println("Sorted List by Collections.sort: " + list2 );
         //demo3 ends
 
         // Demo4-------------------------------------------------------
@@ -150,5 +150,18 @@ public class Main {
 //        Collections.sort(list,cmp);
 //        System.out.println(list);
         // End Demo 7 ---------------------------------
+
+		// Start Demo 8 -------------------------------
+		Stack<Integer> st = new Stack<Integer>();
+		st.push(42);
+		st.push(29);
+		st.push(61);
+		st.push(12);
+		st.push(33);
+		System.out.println(st);
+		System.out.println("Pop: " + st.pop());
+		System.out.println("Pop: " + st.pop());
+		System.out.println("Pop: " + st.pop());
+		// End Demo 8 ---------------------------------
     }
 }
